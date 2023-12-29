@@ -30,7 +30,7 @@ function set_style_sheet()
 {
     wp_enqueue_style('my_theme_style', get_stylesheet_directory_uri() . '/style.css');
 };
-add_action('wo_enqueue_scripts', 'set_style_sheet');
+add_action('wp_enqueue_scripts', 'set_style_sheet');
 
 function set_scripts()
 {
@@ -40,11 +40,11 @@ function set_scripts()
     // ScrollTrigger - with gsap.js passed as a dependency
     wp_enqueue_script( 'gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js', array('gsap-js'), false, true );
     // Your animation code file - with gsap.js passed as a dependency
-    wp_enqueue_script( 'gsap-js2', get_template_directory_uri() . 'js/animation.js', array('gsap-js'), false, true );
+    wp_enqueue_script( 'gsap-js2', get_template_directory_uri() . '/js/animation.js', array('gsap-st'), false, false );
 
 
 };
-add_action('wo_enqueue_scripts', 'set_scripts');
+add_action('wp_enqueue_scripts', 'set_scripts');
 
 // Menu
 

@@ -19,6 +19,9 @@ Version: 1.0
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
 
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/6788614b36.js" crossorigin="anonymous"></script>
+
     <?php
     // 현재 포스트의 이전 포스트에 대한 링크
     $prev_post = get_previous_post();
