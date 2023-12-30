@@ -6,6 +6,9 @@ Description: portfolio site (magazine style)
 Version: 1.0
 */
 
+/* ------------
+ * 공통
+ * ------------ */
 html{
     margin: 0 !important;
 }
@@ -15,10 +18,42 @@ body{
     overflow:hidden;
 }
 
+ .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay .overlay_curtain{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay .overlay_curtain .curtain_part{
+    position: relative;
+    width: 25%;
+    height: 100vh;
+
+}
+
+.overlay .overlay_curtain .curtain_part .cloth{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #3b664e, #16241c, #3b664e);
+}
 
 
+.overlay .overlay_curtain .curtain_part.short{
+    width: 10%;
+}
 
 
+/* ------------
+ * home
+ * ------------ */
 .wrapper{
     width: 100%;
     height: 100vh;
@@ -104,67 +139,3 @@ body{
     left: 35%;
 }
 
-
-
-
-/* .scene{
-    height: 100vh;
-}
-
-#scene_main{
-    background-color: pink;
-}
-
-
-#scene_intro{
-    background-color: coral;
-}
-*/
-
-.box{
-    height: 100px;
-    width: 100px;
-    background-color: skyblue;
-}
-
-/*
-#scene_intro .box2{
-    height: 100px;
-    width: 100px;
-    background-color: white;
-} */
-
-
-
-
-.overlay{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-}
-
-.overlay .overlay_curtain{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.overlay .overlay_curtain .curtain_part{
-    position: relative;
-    width: 25%;
-    height: 100vh;
-
-}
-
-.overlay .overlay_curtain .curtain_part .cloth{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to right, #3b664e, #16241c, #3b664e);
-}
-
-
-.overlay .overlay_curtain .curtain_part.short{
-    width: 10%;
-}

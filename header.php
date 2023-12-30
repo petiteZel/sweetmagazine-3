@@ -22,6 +22,9 @@ Version: 1.0
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/6788614b36.js" crossorigin="anonymous"></script>
 
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <?php
     // 현재 포스트의 이전 포스트에 대한 링크
     $prev_post = get_previous_post();
