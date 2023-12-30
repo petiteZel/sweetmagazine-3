@@ -11,22 +11,7 @@ get_header();
 ?>
 
 <body>
-    <div class="overlay">
-        <div class="overlay_curtain">
-            <div class="curtain_part">
-                <div class="cloth"></div>
-            </div>
-            <div class="curtain_part">
-                <div class="cloth"></div>
-            </div>
-            <div class="curtain_part">
-                <div class="cloth"></div>
-            </div>
-            <div class="curtain_part short">
-                <div class="cloth"></div>
-            </div>
-        </div>
-    </div>
+    
     <div class="wrapper">
 
         <div class="furniture" id="mirror"></div>
@@ -34,6 +19,7 @@ get_header();
         <div class="furniture" id="clock"></div>
         <div class="furniture" id="bookshelf"></div>
         <div class="furniture" id="photo"></div>
+        <div class="furniture" id="photo-s"></div>
 
         <!-- <main class='left_menu'>
             <section class="brand">
@@ -55,6 +41,23 @@ get_header();
                 </ul>
             </section>
         </main> -->
+    </div>
+
+    <div class="overlay">
+        <div class="overlay_curtain">
+            <div class="curtain_part forth">
+                <div class="cloth"></div>
+            </div>
+            <div class="curtain_part third">
+                <div class="cloth"></div>
+            </div>
+            <div class="curtain_part second">
+                <div class="cloth"></div>
+            </div>
+            <div class="curtain_part first">
+                <div class="cloth"></div>
+            </div>
+        </div>
     </div>
 
 

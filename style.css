@@ -12,11 +12,133 @@ html{
 
 body{
     margin: 0;
+    overflow:hidden;
 }
 
+
+
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #e5e1ab;
+    position: absolute;
+}
+
+.wrapper .furniture{
+    cursor: pointer;
+    position: absolute;
+}
+
+.wrapper #mirror{
+    background: url(img/mirror.png);
+    /* background: yellow; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 250px;
+    height: 300px;
+
+    left: 40%;
+    top: 10%;
+}
+.wrapper #desk{
+    background: url(img/desk.png);
+    /* background: skyblue; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 600px;
+    height: 290px;
+
+    left: 25%;
+    bottom: 0px;
+}
+.wrapper #clock{
+    background: url(img/clock.png);
+    /* background: red; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 200px;
+    height: 200px;
+
+    right: 20%;
+    top: 5%;
+}
+.wrapper #bookshelf{
+    background: url(img/bookshelf.png);
+    /* background: rgb(139, 94, 22); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 310px;
+    height: 80%;
+    right: 0px;
+    bottom: 0px;
+}
+
+.wrapper #photo{
+    background: url(img/photo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 200px;
+    height: 220px;
+    left: 20%;
+}
+.wrapper #photo-s{
+    background: url(img/photo-s.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100px;
+    height: 120px;
+    left: 35%;
+}
+
+
+
+
+/* .scene{
+    height: 100vh;
+}
+
+#scene_main{
+    background-color: pink;
+}
+
+
+#scene_intro{
+    background-color: coral;
+}
+*/
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+}
+
+/*
+#scene_intro .box2{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+} */
+
+
+
+
 .overlay{
-    display: none;
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100vh;
 }
@@ -45,55 +167,4 @@ body{
 
 .overlay .overlay_curtain .curtain_part.short{
     width: 10%;
-}
-
-
-
-.wrapper{
-    width: 100%;
-    height: 100vh;
-    background-color: #e5e1ab;
-    position: relative;
-}
-
-.wrapper .furniture{
-    width: 200px;
-    height: 200px;
-    position: absolute;
-}
-
-.wrapper #photo{
-    background: url(img/액자1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-
-
-
-.scene{
-    height: 100vh;
-}
-
-#scene_main{
-    background-color: pink;
-}
-
-
-#scene_intro{
-    background-color: coral;
-}
-
-#scene_intro .box{
-    height: 100px;
-    width: 100px;
-    background-color: skyblue;
-}
-
-#scene_intro .box2{
-    height: 100px;
-    width: 100px;
-    background-color: white;
 }
